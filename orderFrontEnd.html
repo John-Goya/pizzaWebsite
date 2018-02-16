@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	body {
+		display: block;
+	}
+
+	div {
+	    width: auto;
+	    border: 5px solid green;
+	    padding: 5px;
+	    margin: 5px;
+	    align-items: center;
+	}
+	.flex-containermaster {
+	    display: flex;
+		background-image: url("http://www.wallpapers-web.com/data/out/93/4561170-grass-wallpapers.jpg");
+	    flex-flow: row wrap;
+	  	justify-content: center;
+	    padding-left: 100px;
+	    padding-right: 100px;
+	    width: auto;
+	    height: auto;
+	    flex-wrap: wrap;
+	    align-items: baseline;
+	    background-color: white;
+	}
+
+	.flex-containermaster-title {
+	    display: flex;
+		background-image: url("https://borderline-lighting.com/wp-content/uploads/2012/08/pizza-2711.gif");
+		background-size: 310px 95px;
+	    flex-flow: row wrap;
+	  	justify-content: center;
+	    width: 300px;
+	    height: auto;
+	    flex-wrap: wrap;
+	    align-items: baseline;
+	    background-color: ;
+	}	
+
+	.flex-containermaster-menu {
+	    display: flex;
+	    background-image: url("https://3.bp.blogspot.com/-rd8OWqlJq5o/UIGM-gcblII/AAAAAAAAAHc/SLMelrNFzlc/s1600/red_checkers_background_3.jpg");
+	    flex-flow: row wrap;
+	  	justify-content: center;
+	    padding: 50px;
+	    margin-top: 5px;
+	    margin-left: 5px
+	    margin-right: 5px;
+	    margin-bottom: 5px;
+	    width: auto;
+	    height: auto;
+	    flex-wrap: wrap;
+	    align-items: baseline;
+	}
+
+	.flex-container1 {
+	    display: flex;
+	    width: auto;
+	    height: auto;
+	    background-color: red;
+	}
+
+	.flex-container2 {
+	    display: flex;
+	    width: auto;
+	    height: auto;
+	    background-color: white;
+	}
+
+	.flex-container3 {
+	    display: flex;
+	    width: auto;
+	    height: auto;
+	    background-color: blue;
+	}
+
+	.column { 
+	  flex-direction: column; 
+	  float: left;
+	}
+
+	.flex-item {
+	   display: flex;
+	   align-items: baseline;
+	   align-self: flex-start;
+	   justify-content: top;
+	   flex-flow: column wrap;
+	   align-content: baseline;
+	    background-color: cornflowerblue;
+	    padding: 5px;
+	    margin-top: 5px;
+	    margin-left: 5px
+	    margin-right: 5px;
+	    margin-bottom: 5px;
+	    border: solid; 
+	    width: auto;
+	    height: 180px;
+	    border: 5px solid green;
+	}
+
+	.flex-containermaster-order {
+	    display: flex;
+	    flex-flow: row wrap;
+	  	justify-content: center;
+	    width: auto;
+	    height: auto;
+	    flex-wrap: wrap;
+	    align-items: baseline;
+	    background-color: blue;
+	}
+
+	.flex-item-order {
+	   display: flex;
+	   align-items: center;
+	   justify-content: center;
+	   flex-flow: column wrap;
+	   align-content: center;
+	    background-color: green;
+	    list-style-type: none;
+	    padding: 5px;
+	    margin-top: 5px;
+	    margin-left: 5px
+	    margin-right: 5px;
+	    margin-bottom: 5px;
+	    width: auto;
+	    height: auto;
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+	    padding: 0;
+	}
+
+	fieldset {
+    border: 1px solid #ddd;
+    padding: 0 .4em .4em .4em;
+    margin: 0 0 1.5em 0;
+    border-radius: 8px;
+    margin: 0 5px;
+    height: auto;
+	}
+
+</style>
+</head>
+
+<body>
+<div class="flex-containermaster">
+
+<p>
+<center><div class="flex-containermaster-title">
+<h1><center><br></center></h1>
+</div></center>
+</p>
+
+<p>
+<div class="flex-containermaster-menu">
+
+<div class="flex-container1">
+
+<ul class="flex-item">
+<form action="" id="sizeSelect">
+<fieldset>
+<legend>Select size</legend>
+<li><input type="radio" name="size[]" id="szpersonal" value="Personal" checked><label for="szpersonal">Personal</label></li>
+<li><input type="radio" name="size[]" id="szmedium" value="Medium"><label for="szmedium">Medium</label></li>
+<li><input type="radio" name="size[]" id="szlarge" value="Large"><label for="szlarge">Large</label></li>
+<li><input type="radio" name="size[]" id="xtralarge" value="Extra Large"><label for="xtralarge">Extra Large</label></li>
+<br><br><br><br>
+</fieldset>
+</form>
+</ul>
+
+<ul class="flex-item">
+<form action="" id="crustSelect">
+<fieldset>
+<legend>Select crust</legend>
+<li><input type="radio" name="crust[]" id="crustpln" value="Plain Crust" checked><label for="crustpln">Plain Crust</label></li>
+<li><input type="radio" name="crust[]" id="crustgrlc" value="Garlic Butter Crust"><label for="crustgrlc">Garlic Butter Crust</label></li>
+<li><input type="radio" name="crust[]" id="crustchz" value="Cheese Stuffed Crust"><label for="crustchz">Cheese Stuffed Crust</label></li>
+<li><input type="radio" name="crust[]" id="crustsp" value="Spicy Crust"><label for="crustsp">Spicy Crust</label></li>
+<li><input type="radio" name="crust[]" id="crustHS" value="House Special Crust"><label for="crustHS">House Special Crust</label></li>
+<br><br><br>
+</fieldset>
+</form>
+</ul>
+
+</div>
+
+
+<div class="flex-container2">
+
+<ul class="flex-item">
+<form action="" id="sauceSelect">
+<fieldset>
+<legend>Select sauce</legend>
+<li><input type="radio" name="sauce[]" id="saucepln" value="Marinara Sauce" checked><label for="saucepln">Marinara Sauce</label></li>
+<li><input type="radio" name="sauce[]" id="saucegrlc" value="White Sauce"><label for="saucegrlc">White Sauce</label></li>
+<li><input type="radio" name="sauce[]" id="saucechz" value="Barbeque Sauce"><label for="saucechz">Barbeque Sauce</label></li>
+<li><input type="radio" name="sauce[]" id="saucenone" value="No Sauce"><label for="saucenone">No Sauce</label></li>
+<br><br><br><br>
+</fieldset>
+</form>
+</ul>
+
+<ul class="flex-item">
+<form action="" id="cheeseSelect">
+<fieldset>
+<legend>Select cheese</legend>
+<li><input type="radio" name="cheese[]" id="cheesereg" value="Regular Cheese" checked><label for="cheesereg">Regular Cheese</label></li>
+<li><input type="radio" name="cheese[]" id="chessenone" value="No Cheese"><label for="chessenone">No Cheese</label></li>
+<li><input type="radio" name="cheese[]" id="cheeseextra" value="Extra Cheese"><label for="cheeseextra">Extra Cheese</label></li>
+<br><br><br><br><br>
+</fieldset>
+</form>
+</ul>
+
+</div>
+
+
+<div class="flex-container3">
+
+<ul class="flex-item">
+<form action="" id="meatSelect">
+<fieldset>
+<legend>Select Meats</legend>
+<li><input type="checkbox" name="meats[]" id="meatpp" value="Pepperoni"><label for="meatpp">Pepperoni</label></li>
+<li><input type="checkbox" name="meats[]" id="meatsaus" value="Sausage"><label for="meatsaus">Sausage</label></li>
+<li><input type="checkbox" name="meats[]" id="meatcbac" value="Canadian Bacon"><label for="meatcbac">Canadian Bacon</label></li>
+<li><input type="checkbox" name="meats[]" id="meatgbeef" value="Ground Beef"><label for="meatgbeef">Ground Beef</label></li>
+<li><input type="checkbox" name="meats[]" id="meatanchov" value="Anchovy"><label for="meatanchov">Anchovy</label></li>
+<li><input type="checkbox" name="meats[]" id="meatchix" value="Chicken"><label for="meatchix">Chicken</label></li>
+<br><br>
+</fieldset>
+</form>
+</ul>
+
+<ul class="flex-item">
+<form action="" id="veggieSelect">
+<fieldset>
+<legend>Select Veggies</legend>
+<li><input type="checkbox" name="veggies[]" id="vegtomto" value="Tomatoes"><label for="vegtomto">Tomatoes</label></li>
+<li><input type="checkbox" name="veggies[]" id="vegonion" value="Onions"><label for="vegonion">Onions</label></li>
+<li><input type="checkbox" name="veggies[]" id="vegolive" value="Olives"><label for="vegolive">Olives</label></li>
+<li><input type="checkbox" name="veggies]" id="veggrnpep" value="Green Peppers"><label for="veggrnpep">Green Peppers</label></li>
+<li><input type="checkbox" name="veggies[]" id="vegmush" value="Mushrooms"><label for="vegmush">Mushrooms</label></li>
+<li><input type="checkbox" name="veggies[]" id="vegpine" value="Pineapple"><label for="vegpine">Pineapple</label></li>
+<li><input type="checkbox" name="veggies[]" id="vegspnch" value="Spinach"><label for="vegspnch">Spinach</label></li>
+<li><input type="checkbox" name="veggies[]" id="vegjalap" value="Jalapeno"><label for="vegjalap">Jalapeno</label></li>
+</fieldset>
+</form>
+</ul>
+
+</div>
+</div>
+</p>
+
+<div class="flex-containermaster-order">
+<p>
+    <div class="flex-item-order">   	
+        <input type="button" id="btnOrder" name="Order" value="Place order" onclick="getTotal()";>
+        <input type="button" name="cancel" onclick="cancel()" value="Reset order">
+    </div>
+
+    <div class="flex-item-order">
+    	<h3>Items Ordered:</h3>
+		<div id="itemsOrder"></div>
+		<div id="showTotal"></div>
+		
+	</div>
+</p>
+</div>
+</div>
+<script src="./js/13_final_project_JG.js"></script>
+</body>
+</html>
